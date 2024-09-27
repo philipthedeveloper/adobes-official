@@ -5,9 +5,16 @@
 :root {
   --main-background: #131313;
   --base-color: #2ca4fb;
-  --base-color-darker: hsl(205, 96%, 30%);
+  --base-color-darker: #035996;
   --danger-bg: #f7666e;
   --base-color-trans: rgba(44, 164, 251, 0.1);
+  --tw-gradient-stops: rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0);
+  --transparent-white: #ffffff14;
+  --feedback-color: #e22808;
+}
+
+.card {
+  background-color: #131313 !important;
 }
 
 .danger-bg {
@@ -163,4 +170,20 @@ body {
 .slick-track {
   display: flex !important;
   gap: 1rem !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus,
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background-color: initial;
+}
+
+country-list.card .react-tel-input .country-list .country:hover,
+country-list.card .react-tel-input .country-list .country.highlight {
+  background-color: #0d0d0d !important;
+}
+
+.react-tel-input .country-list .country:hover,
+.react-tel-input .country-list .country.highlight {
+  background-color: #0d0d0d !important;
 }
