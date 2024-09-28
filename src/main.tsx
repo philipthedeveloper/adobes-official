@@ -4,11 +4,12 @@ import "./index.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BrowserRouter } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
 import { Provider } from "react-redux";
 import store from "./redux/store.ts";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 if (typeof global === "undefined") {
   window.global = window;

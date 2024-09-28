@@ -95,7 +95,6 @@ export const Survey = ({}: Props) => {
     phoneNumber: yup.string().required("Please enter phone number"),
     website: yup
       .string()
-      .required("Please provide website link")
       .matches(
         /^(https?:\/\/)?([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+\.[a-zA-Z]{2,}(:[0-9]{1,5})?(\/[^\s]*)?$/,
         "Enter a valid url"
@@ -231,8 +230,9 @@ export const Survey = ({}: Props) => {
       validation.resetForm();
       setCurrentRange(1);
       dispatch(resetSubmitSurvey());
-      window.location.href =
-        "https://calendly.com/adutem05/marketing-consultation?month=2024-09";
+      let month: any = new Date().getMonth() + 1;
+      if (month < 10) month = `0${month}`;
+      window.location.href = `https://calendly.com/adobesmarketingagency/30min?month=2024-${month}`;
     }
   }, [surveySubmitted]);
 
