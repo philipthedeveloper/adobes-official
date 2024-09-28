@@ -421,28 +421,25 @@ export const Survey = ({}: Props) => {
       </div>
       <div className="w-full h-[200px] bg-[var(--base-color)] flex flex-col items-center gap-6 justify-center">
         <p className="text-center text-white md:text-2xl neue-regular">
-          All right Reserved. &copy; Adutem Innovation
+          All right Reserved. &copy; 2020 - 2024 Adobes Marketing Agency
         </p>
 
         {/* Socials */}
         <div className="text-white flex items-center gap-5 justify-center">
-          <a target="_blank" href="https://www.instagram.com/adutem_tech">
+          <a
+            target="_blank"
+            href="https://www.instagram.com/adobesmarketingagency"
+          >
             <i className="fi fi-brands-instagram flex text-2xl"></i>
           </a>
           <a
-            href="https://www.tiktok.com/@adutem_tech.adute?_t=8iy70GF1tmY&_r=1"
             target="_blank"
-          >
-            <i className="fi fi-brands-tik-tok flex text-2xl"></i>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/Aduteminnovationmarketing/"
+            href="https://www.facebook.com/share/uQ7rULqDUTvr3Pif/?mibextid=qi2Omg"
           >
             <i className="fi fi-brands-facebook flex text-2xl"></i>
           </a>
           <a
-            href="https://www.linkedin.com/company/adutem-innovation-marketing/"
+            href="https://www.linkedin.com/in/aramide-ojo-18298a208"
             target="_blank"
           >
             <i className="fi fi-brands-linkedin flex text-2xl"></i>

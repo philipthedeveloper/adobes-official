@@ -30,7 +30,7 @@ export const Landing = ({}: Props) => {
       <div className="w-full h-[200px] bg-[var(--base-color-darker)] relative z-10">
         <div className="flex flex-col justify-center md:flex-row items-center md:justify-between gap-6 w-[90%] lg:w-[80%] mx-auto h-full">
           <p className="text-center text-white md:text-2xl">
-            All right Reserved. &copy; Adobes Marketing Agency
+            All right Reserved. &copy; 2020 - 2024 Adobes Marketing Agency
           </p>
 
           {/* Socials */}

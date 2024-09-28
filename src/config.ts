@@ -1,6 +1,6 @@
 const config = {
   API_URL: import.meta.env.VITE_API_URL,
-  // PIXEL_ID: "2495547617315276",
+  PIXEL_ID: "506923868996852",
   FIRE_BASE: {
     //   API_KEY: process.env.REACT_APP_APIKEY,
     //   AUTH_DOMAIN: process.env.REACT_APP_AUTHDOMAIN,

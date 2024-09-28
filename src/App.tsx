@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Router from "./router/Router";
 import { checkInViewPort } from "./utils";
+// @ts-ignore
+import FacebookPixel from "./tracking/Facebook";
 
 const handleWindowScroll = () => {
   const allCards = document.querySelectorAll(".fade-up-card");
@@ -20,6 +22,7 @@ function App() {
 
   return (
     <>
+      <FacebookPixel />
       <Router />
     </>
   );
