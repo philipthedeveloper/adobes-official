@@ -258,10 +258,7 @@ export const Survey = ({}: Props) => {
           <div className="w-full md:gap-8">
             <header className="pt-4 md:pt-8 ">
               <div>
-                <a
-                  href="https://adutem-innovation.onrender.com/"
-                  target="_blank"
-                >
+                <a href="/" target="_blank">
                   <img src={adobesLogo} className="max-h-16 md:max-h-20" />
                 </a>
               </div>
