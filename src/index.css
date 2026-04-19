@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 :root {
+  --main-background: #ffffff;
+  --base-color: #2ca4fb;
+  --base-color-darker: #035996;
+  --danger-bg: #f7666e;
+  --base-color-trans: rgba(44, 164, 251, 0.1);
+  --tw-gradient-stops: rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0);
+  --transparent-white: #00000014;
+  --feedback-color: #e22808;
+}
+
+.dark {
   --main-background: #131313;
   --base-color: #2ca4fb;
   --base-color-darker: #035996;
@@ -14,7 +25,7 @@
 }
 
 .card {
-  background-color: #131313 !important;
+  background-color: var(--main-background) !important;
 }
 
 .danger-bg {

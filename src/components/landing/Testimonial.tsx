@@ -40,7 +40,7 @@ export const Testimonials = ({}: Props) => {
           <span className="font-bold text-[var(--base-color)] text-2xl md:text-3xl">
             Testimonials
           </span>
-          <span className="font-light text-gray-300 text-xl md:text-2xl">
+          <span className="font-light text-gray-600 dark:text-gray-300 text-xl md:text-2xl">
             What our clients have to say
           </span>
         </h2>
@@ -57,7 +57,7 @@ export const Testimonials = ({}: Props) => {
       <span className="font-bold text-[var(--base-color)] text-2xl md:text-3xl mx-auto block mt-8 mb-1 text-center">
         Want to learn more?
       </span>
-      <span className="font-light text-gray-300 text-xl md:text-2xl text-center mx-auto block mb-6">
+      <span className="font-light text-gray-600 dark:text-gray-300 text-xl md:text-2xl text-center mx-auto block mb-6">
         Reach out to us
       </span>
       <LinkButton

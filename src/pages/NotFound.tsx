@@ -9,12 +9,12 @@ export const NotFound = () => {
         <img src={notFoundImage} className="w-72 h-72" />
       </div>
       <h1
-        className="text-center text-white font-medium"
+        className="text-center text-black dark:text-white font-medium"
         style={{ fontSize: "clamp(1.5rem, 9vw, 35px)" }}
       >
         Page Not Found!!!
       </h1>
-      <p className="my-6 text-center font-normal text-gray-200 text-sm sm:text-base">
+      <p className="my-6 text-center font-normal text-gray-600 dark:text-gray-200 text-sm sm:text-base">
         The Page you are looking for could not be found.
       </p>
       <Link

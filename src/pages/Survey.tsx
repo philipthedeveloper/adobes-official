@@ -275,16 +275,16 @@ export const Survey = ({}: Props) => {
                 10X your business ROI today
               </h1>
               <p
-                className="capitalize mt-5 md:text-xl text-gray-100 font-semibold max-w-[800px] text-center neue-regular"
+                className="capitalize mt-5 md:text-xl text-black dark:text-gray-100 font-semibold max-w-[800px] text-center neue-regular"
                 style={{ lineHeight: "1.5" }}
               >
                 {"GET YOUR OWN TRAFFIC-GENERATION INBOUND LEAD SYSTEM & SECURE NEW PROJECTS/ClIENTS EVERY 30 DAYS OR IT'S FREE".toLowerCase()}
               </p>
-              <p className="font-semibold text-xs md:text-sm text-gray-300 opacity-80 mt-6 flex item-center gap-1 text-center justify-center">
+              <p className="font-semibold text-xs md:text-sm text-gray-600 dark:text-gray-300 opacity-80 mt-6 flex item-center gap-1 text-center justify-center">
                 <i className="fi fi-sr-shield-check flex"></i>
                 <span className="-mt-1 neue-regular">Pay-Per-Project</span>
               </p>
-              <p className="font-semibold text-xs md:text-sm text-gray-300 mt-2 flex item-center gap-1 text-center justify-center">
+              <p className="font-semibold text-xs md:text-sm text-gray-600 dark:text-gray-300 mt-2 flex item-center gap-1 text-center justify-center">
                 <i className="fi fi-sr-shield-check flex"></i>
                 <span className="-mt-1 neue-regular">
                   The #1 Way to Close New Projects during high interest rate

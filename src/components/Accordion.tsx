@@ -21,8 +21,10 @@ export const Accordion = ({ data: { question, answer } }: AccordionProps) => {
       const text = e.target.nextElementSibling;
       if (text.style.maxHeight) {
         text.style.maxHeight = "";
+        text.classList.remove("active");
       } else {
         text.style.maxHeight = text.scrollHeight + "px";
+        text.classList.add("active");
       }
     });
   }, []);
@@ -98,12 +100,10 @@ const Panel = styled.div`
   background-color: var(--base-color-trans);
   overflow: hidden;
   transition: 0.5s;
-  max-height: 0;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
 
-  p {
-    padding: 1.5rem;
+  &.active {
+    background-color: var(--base-color-darker);
   }
 `;
+
 export default Accordion;

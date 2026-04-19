@@ -14,17 +14,17 @@ export const Intro = ({}: Props) => {
         </h1>
         <div className="overflow-hidden h-max">
           <p
-            className="capitalize mt-5 md:text-xl text-gray-100 font-semibold max-w-[440px] text-left sm:text-center md:text-left fade-in-no-delay"
+            className="capitalize mt-5 md:text-xl text-black dark:text-gray-100 font-semibold max-w-[440px] text-left sm:text-center md:text-left fade-in-no-delay"
             style={{ lineHeight: "1.5" }}
           >
             {"GET YOUR OWN TRAFFIC-GENERATION INBOUND LEAD SYSTEM & SECURE NEW PROJECTS/ClIENTS EVERY 30 DAYS OR IT'S FREE".toLowerCase()}
           </p>
 
-          <p className="font-semibold text-xs md:text-[16px] text-gray-300 opacity-80 mt-4 sm:text-center md:text-left fade-in-no-delay">
+          <p className="font-semibold text-xs md:text-[16px] text-gray-600 dark:text-gray-300 opacity-80 mt-4 sm:text-center md:text-left fade-in-no-delay">
             Pay-Per-Project
           </p>
 
-          <p className="font-semibold text-xs md:text-[16px] text-gray-300 opacity-80 mt-2 text-left sm:text-center md:text-left fade-in-no-delay">
+          <p className="font-semibold text-xs md:text-[16px] text-gray-600 dark:text-gray-300 opacity-80 mt-2 text-left sm:text-center md:text-left fade-in-no-delay">
             The #1 Way to Close New Projects during high interest rate periods
           </p>
         </div>

@@ -8,8 +8,6 @@ import { Provider } from "react-redux";
 import store from "./redux/store.ts";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 if (typeof global === "undefined") {
   window.global = window;
@@ -19,7 +17,6 @@ createRoot(document.getElementById("root")!).render(
   <Provider store={store}>
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <BrowserRouter>
-        <ToastContainer autoClose={2000} limit={1} theme="dark" />
         <App />
       </BrowserRouter>
     </LocalizationProvider>

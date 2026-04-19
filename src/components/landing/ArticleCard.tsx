@@ -12,7 +12,7 @@ type Props = {
 export const ArticleCard = ({ iconName, title, description }: Props) => {
   return (
     <div
-      className="w-full rounded-[5px] p-5 py-6 sm:p-6 bg-[#0d0d0d] fade-up-card relative overflow-hidden h-72 opacity-0 translate-y-20 delay-200"
+      className="w-full rounded-[5px] p-5 py-6 sm:p-6 bg-gray-100 dark:bg-[#0d0d0d] fade-up-card relative overflow-hidden h-72 opacity-0 translate-y-20 delay-200"
       style={{
         transition: "transform 0.5s, opacity 0.7s ease",
         boxShadow: "2px 2px 4px rgba(15, 15, 15, 0.7)",
@@ -35,8 +35,8 @@ export const ArticleCard = ({ iconName, title, description }: Props) => {
         </div>
 
         <div className="mt-7">
-          <h3 className="font-bold text-xl text-white capitalize">{title}</h3>
-          <p className="text-gray-300 font-normal text-sm leading-relaxed flex-1 mt-2">
+          <h3 className="font-bold text-xl text-black dark:text-white capitalize">{title}</h3>
+          <p className="text-gray-600 dark:text-gray-300 font-normal text-sm leading-relaxed flex-1 mt-2">
             {description}
           </p>
         </div>
