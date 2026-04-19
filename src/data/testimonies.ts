@@ -42,7 +42,7 @@ export const testimonies: Testimony[] = [
       bio: "CEO - Trendsetters Inc.",
     },
     comment:
-      "Adobe Marketing Agency Revolutionised our Brand's Market Position Their thinking outside the box combined with their data centric strategies brought us results we never imagined. We couldn't be happier!",
+      "Adoven Marketing Agency Revolutionised our Brand's Market Position Their thinking outside the box combined with their data centric strategies brought us results we never imagined. We couldn't be happier!",
     rating: 4.5,
   },
   {
@@ -51,7 +51,7 @@ export const testimonies: Testimony[] = [
       bio: "Founder of BrightFuture Ventures",
     },
     comment:
-      "Engaging with Adobe's Marketing Agency changed the game for us. Their work has been innovative and with a quality mindset which made them the ideal partner to our marketing.",
+      "Engaging with Adoven's Marketing Agency changed the game for us. Their work has been innovative and with a quality mindset which made them the ideal partner to our marketing.",
     rating: 4,
   },
   {
@@ -69,7 +69,7 @@ export const testimonies: Testimony[] = [
       bio: "COO of Horizon Enterprises",
     },
     comment:
-      "Results are evidence in themselves. Every time we turned around, Adobe's Creative Agency outperformed itself and produced campaigns that went above our expectations.",
+      "Results are evidence in themselves. Every time we turned around, Adoven's Creative Agency outperformed itself and produced campaigns that went above our expectations.",
     rating: 5,
   },
 ];

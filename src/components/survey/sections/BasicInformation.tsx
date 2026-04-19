@@ -4,11 +4,13 @@ import FormInput from "../../forms/FormInput";
 type BasicInfoProps = {
   validation: any;
   currentRange: number;
+  lightMode?: boolean;
 };
 
 export const BasicInformation = ({
   validation,
   currentRange,
+  lightMode = false,
 }: BasicInfoProps) => {
   // Useful methods from validation obj
   const { handleChange, handleBlur, values } = validation;
@@ -31,6 +33,7 @@ export const BasicInformation = ({
         placeholder="Enter your name"
         value={values.name || ""}
         validation={validation}
+        lightMode={lightMode}
         className="neue-regular text-gray-300"
       />
       <FormInput
@@ -42,6 +45,7 @@ export const BasicInformation = ({
         placeholder="Enter your company's name"
         value={values.companyName || ""}
         validation={validation}
+        lightMode={lightMode}
         className="neue-regular text-gray-300"
       />
       <FormInput
@@ -53,6 +57,7 @@ export const BasicInformation = ({
         placeholder="Enter your email address"
         value={values.emailAddress || ""}
         validation={validation}
+        lightMode={lightMode}
         className="neue-regular text-gray-300"
       />
       <FormInput
@@ -64,6 +69,7 @@ export const BasicInformation = ({
         placeholder="Enter your phone number"
         value={values.phoneNumber || ""}
         validation={validation}
+        lightMode={lightMode}
         className="neue-regular text-gray-300"
       />
       <FormInput
@@ -75,6 +81,7 @@ export const BasicInformation = ({
         placeholder="e.g https://example.com"
         value={values.website || ""}
         validation={validation}
+        lightMode={lightMode}
         className="neue-regular text-gray-300"
       />
     </div>

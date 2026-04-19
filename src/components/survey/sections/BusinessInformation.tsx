@@ -4,6 +4,7 @@ import FormInput from "../../forms/FormInput";
 type BasicInfoProps = {
   validation: any;
   currentRange: number;
+  lightMode?: boolean;
 };
 
 const operatingYears = [
@@ -23,6 +24,7 @@ const companySize = [
 export const BusinessInformation = ({
   validation,
   currentRange,
+  lightMode = false,
 }: BasicInfoProps) => {
   // Useful methods from validation obj
   const { handleChange, handleBlur, values } = validation;
@@ -45,6 +47,7 @@ export const BusinessInformation = ({
         placeholder="Enter your business's industry"
         value={values.businessIndustry || ""}
         validation={validation}
+        lightMode={lightMode}
         className="neue-regular text-gray-300"
       />
       <FormInput
@@ -56,6 +59,7 @@ export const BusinessInformation = ({
         placeholder="Select Year"
         value={values.operatingYears || ""}
         validation={validation}
+        lightMode={lightMode}
         className="neue-regular text-gray-300"
         options={operatingYears}
         defaultValue={""}
@@ -69,6 +73,7 @@ export const BusinessInformation = ({
         placeholder="Select Company Size"
         value={values.companySize || ""}
         validation={validation}
+        lightMode={lightMode}
         className="neue-regular text-gray-300"
         options={companySize}
         defaultValue={""}

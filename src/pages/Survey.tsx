@@ -1,5 +1,7 @@
-import adobesLogo from "@/assets/images/logo.png";
+import adovenLogo from "@/assets/images/logo.png";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 import {
   emailRegex,
   sectionList,
@@ -32,6 +34,7 @@ export const Survey = ({}: Props) => {
   const shadowBoxRef = useRef<null | HTMLDivElement>(null);
   const { useStateSelector, dispatch } = useRedux();
   const [loading, setLoading] = useState(false);
+  const theme = useSelector((state: RootState) => state.Theme.theme);
 
   // Survey form state
   const { submittingSurvey, surveySubmitted, surveySubmissionError } =
@@ -42,8 +45,11 @@ export const Survey = ({}: Props) => {
     [currentRange]
   );
 
-  document.documentElement.style.background = "#131313";
-  document.body.style.background = "#131313";
+  useEffect(() => {
+    const bgColor = theme === 'light' ? '#ffffff' : '#131313';
+    document.documentElement.style.background = bgColor;
+    document.body.style.background = bgColor;
+  }, [theme]);
 
   // Default survey form data
   const defaultValues = useMemo(
@@ -232,7 +238,7 @@ export const Survey = ({}: Props) => {
       dispatch(resetSubmitSurvey());
       let month: any = new Date().getMonth() + 1;
       if (month < 10) month = `0${month}`;
-      window.location.href = `https://calendly.com/adobesmarketingagency/30min?month=2024-${month}`;
+      window.location.href = `https://calendly.com/adovenmarketingagency/30min?month=2024-${month}`;
     }
   }, [surveySubmitted]);
 
@@ -259,7 +265,7 @@ export const Survey = ({}: Props) => {
             <header className="pt-4 md:pt-8 ">
               <div>
                 <a href="/" target="_blank">
-                  <img src={adobesLogo} className="max-h-16 md:max-h-20" />
+                  <img src={adovenLogo} className="max-h-16 md:max-h-20" />
                 </a>
               </div>
             </header>
@@ -298,7 +304,7 @@ export const Survey = ({}: Props) => {
 
       <div
         ref={shadowBoxRef}
-        className="w-[90%] lg:w-[80%] max-w-xl mx-auto bg-[#0d0d0d] p-4 my-10 mt-12 mb-36 md:p-8 transition-all duration-300 rounded-lg"
+        className="w-[90%] lg:w-[80%] max-w-xl mx-auto bg-gray-50 dark:bg-[#0d0d0d] p-4 my-10 mt-12 mb-36 md:p-8 transition-all duration-300 rounded-lg"
         style={{
           boxShadow:
             "0px 4px 8px rgba(0, 0, 0, 0.10), 0px 8px 25px rgba(0, 0, 0, 0.15)",
@@ -326,45 +332,52 @@ export const Survey = ({}: Props) => {
             <BasicInformation
               validation={validation}
               currentRange={currentRange}
+              lightMode={theme === 'light'}
             />
 
             {/* BUSINESS INFORMATION */}
             <BusinessInformation
               validation={validation}
               currentRange={currentRange}
+              lightMode={theme === 'light'}
             />
 
             {/* MARKETING AND LEAD GENERATION NEEDS */}
             <MarketingAndLeadGenerationNeeds
               validation={validation}
               currentRange={currentRange}
+              lightMode={theme === 'light'}
             />
 
             {/* CURRENT MARKETING PERFORMANCE */}
             <CurrentMarketingPerformance
               validation={validation}
               currentRange={currentRange}
+              lightMode={theme === 'light'}
             />
 
             {/* CHALLENGES AND GOLAS */}
             <ChallengesAndGoals
               validation={validation}
               currentRange={currentRange}
+              lightMode={theme === 'light'}
             />
 
             {/* DECISION MAKING PROCESS */}
             <DecisionMakingProcess
               validation={validation}
               currentRange={currentRange}
+              lightMode={theme === 'light'}
             />
 
             {/* TIMELINE */}
-            <Timeline validation={validation} currentRange={currentRange} />
+            <Timeline validation={validation} currentRange={currentRange} lightMode={theme === 'light'} />
 
             {/* ADDITIONAL INFORMATION */}
             <AdditionalInformation
               validation={validation}
               currentRange={currentRange}
+              lightMode={theme === 'light'}
             />
 
             {/* Action Buttons */}
@@ -418,14 +431,14 @@ export const Survey = ({}: Props) => {
       </div>
       <div className="w-full h-[200px] bg-[var(--base-color)] flex flex-col items-center gap-6 justify-center">
         <p className="text-center text-white md:text-2xl neue-regular">
-          All right Reserved. &copy; 2020 - 2024 Adobes Marketing Agency
+          All right Reserved. &copy; 2020 - 2026 Adoven Marketing Agency
         </p>
 
         {/* Socials */}
         <div className="text-white flex items-center gap-5 justify-center">
           <a
             target="_blank"
-            href="https://www.instagram.com/adobesmarketingagency"
+            href="https://www.instagram.com/adovenmarketingagency"
           >
             <i className="fi fi-brands-instagram flex text-2xl"></i>
           </a>

@@ -1,7 +1,7 @@
 const SectionHeader = ({ sectionName }: { sectionName: string }) => {
   return (
     <div>
-      <h2 className="neue-regular text-2xl my-4 font-bold mt-8 text-white">
+      <h2 className="neue-regular text-2xl my-4 font-bold mt-8 text-black dark:text-white">
         {sectionName}
       </h2>
     </div>

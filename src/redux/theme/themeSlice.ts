@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const getInitialTheme = (): 'light' | 'dark' => {
   const stored = localStorage.getItem('theme');
-  return stored === 'light' ? 'light' : 'dark';
+  return stored === 'dark' ? 'dark' : 'light';
 };
 
 const themeSlice = createSlice({

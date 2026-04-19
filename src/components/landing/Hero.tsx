@@ -1,7 +1,7 @@
 import { Intro } from "./Intro";
 import pageBackground from "@/assets/svgs/page-background-sm.svg";
 import businessGrowth from "@/assets/svgs/growth.svg";
-import adobesLogo from "@/assets/images/logo.png";
+import adovenLogo from "@/assets/images/logo.png";
 
 type Props = {};
 export const Hero = ({}: Props) => {
@@ -21,7 +21,7 @@ export const Hero = ({}: Props) => {
           <header className="pt-4 md:pt-8 ">
             <div>
               <a href="/">
-                <img src={adobesLogo} className="max-h-16 md:max-h-28" />
+                <img src={adovenLogo} className="max-h-16 md:max-h-28" />
               </a>
             </div>
           </header>
