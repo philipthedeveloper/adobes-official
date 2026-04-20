@@ -5,6 +5,7 @@ import { biggestLeadGenerationChallenge } from "@/constant";
 type SectionProps = {
   validation: any;
   currentRange: number;
+  lightMode?: boolean;
 };
 
 const averageMonthlyLeadGeneration = [
@@ -20,6 +21,7 @@ const currentConversionRate = ["Less than 1%", "1 - 5%", "5 - 10%", "10%+"];
 export const CurrentMarketingPerformance = ({
   validation,
   currentRange,
+  lightMode = false,
 }: SectionProps) => {
   // Useful methods from validation obj
   const { handleChange, handleBlur, values } = validation;

@@ -4,6 +4,7 @@ import FormInput from "../../forms/FormInput";
 type SectionProps = {
   validation: any;
   currentRange: number;
+  lightMode?: boolean;
 };
 
 const timeline = [
@@ -13,7 +14,7 @@ const timeline = [
   "In 6 months or more",
 ];
 
-export const Timeline = ({ validation, currentRange }: SectionProps) => {
+export const Timeline = ({ validation, currentRange, lightMode = false }: SectionProps) => {
   // Useful methods from validation obj
   const { handleChange, handleBlur, values } = validation;
 

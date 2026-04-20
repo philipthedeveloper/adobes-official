@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 type SectionProps = {
   validation: any;
   currentRange: number;
+  lightMode?: boolean;
 };
 
 const generateYesOrNoOption = () => [
@@ -23,6 +24,7 @@ const generateYesOrNoOption = () => [
 export const DecisionMakingProcess = ({
   validation,
   currentRange,
+  lightMode = false,
 }: SectionProps) => {
   // Useful methods from validation obj
   const { handleChange, handleBlur, values } = validation;

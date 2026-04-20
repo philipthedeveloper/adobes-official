@@ -4,11 +4,13 @@ import FormInput from "../../forms/FormInput";
 type BasicInfoProps = {
   validation: any;
   currentRange: number;
+  lightMode?: boolean;
 };
 
 export const AdditionalInformation = ({
   validation,
   currentRange,
+  lightMode = false,
 }: BasicInfoProps) => {
   // Useful methods from validation obj
   const { handleChange, handleBlur, values } = validation;
